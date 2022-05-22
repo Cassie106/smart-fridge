@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import MyTable from './MyTable'
+import App from './components/App';
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MyTable from './components/MyTable'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/*<App />*/}
-    <MyTable />
-  </React.StrictMode>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="database" element={<MyTable />} />
+        </Routes>
+    </BrowserRouter>
 );
 
 
