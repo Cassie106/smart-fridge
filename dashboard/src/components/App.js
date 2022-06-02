@@ -9,7 +9,7 @@ export default function App() {
 
         </div>
         <img src={background} className="img-fluid" alt="BackGround" />
-        <h1 class="text-center">Fresh Bank</h1>
+        <h1 className="text-center">Fresh Bank</h1>
         <nav
             style={{
               borderBottom: "solid 1px",

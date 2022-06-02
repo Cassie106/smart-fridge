@@ -131,3 +131,5 @@ dmypy.json
 
 # artifacts
 artifacts/
+
+*/node_modules/
