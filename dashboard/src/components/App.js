@@ -1,49 +1,26 @@
-import background from '../images/background2.jpeg'
+import background from '../images/bg.png'
 import { render } from 'react-dom';
-import {Image} from 'react-bootstrap';
+import '../styles/App.css';
 
 export default function App() {
   return (
       <div>
-        <div className=''>
-
+        <div className="container">
+            <img src={background} alt="BackGround\"/>
+            <h1 className="title">Fresh Bank</h1>
+            <nav
+                style={{
+                  borderBottom: "solid 1px",
+                  paddingBottom: "1rem",
+                }}
+            >
+              <a type="button" className="btn btn-success checkDB" alt="dbButton" href='/database'>Database</a>
+              <a type="button" className="btn btn-success dashboard" alt="dashboardButton" href='/dashboard'>Dashboard</a>
+            </nav>
         </div>
-        <img src={background} className="img-fluid" alt="BackGround" />
-        <h1 className="text-center">Fresh Bank</h1>
-        <nav
-            style={{
-              borderBottom: "solid 1px",
-              paddingBottom: "1rem",
-            }}
-        >
-          {/*<Link to="/database">Database</Link>*/}
-          <a type="button" className="btn btn-success" alt="dbButton" href='/database'>Check Database</a>
-        </nav>
       </div>
   );
 }
-
-// var App = React.createClass ( {
-//   render() {
-//     var background = {backgroundSize : 'cover'};
-//     var textStyle = {
-//       position: 'absolute',
-//       top: '50%',
-//       left: '50%'
-//     };
-//
-//     return (
-//         <div style={{width: 'auto'}}>
-//           <Image
-//               style={background} responsive
-//               src="http://www.milkbardigital.com.au/wp-content/uploads/2015/11/Milkbar-Home-Background.jpg">
-//           </Image>
-//           <h1 style={textStyle}>Text over image</h1>
-//         </div>
-//     );
-//   }
-// });
-
 
 render(<App />, document.getElementById('root'));
 

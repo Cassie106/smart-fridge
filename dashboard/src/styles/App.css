@@ -45,3 +45,44 @@
 .dbButton {
  text-align: right;
 }
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkDB {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.dashboard {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.text {
+  color: rgb(17, 121, 44);
+}
+
+.login {
+  position: absolute;
+  top: 42%;
+  left: 10%;
+}
+
+.backBtn {
+  position: absolute;
+  top: 42%;
+  left: 10%;
+}

@@ -30,4 +30,4 @@ const config = {
   containerId: "warehouse",
   partitionKey: { kind: "Hash", paths: ["/id"] }
 };
-  module.exports = config;
+module.exports = config;
